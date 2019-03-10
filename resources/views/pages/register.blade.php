@@ -35,7 +35,7 @@
                       </div>
                         <div class="col-lg-6">
                           <div class="form-group">
-                          <label class="form-control-label" for="id_position">Address</label>
+                          <label class="form-control-label" for="id_position">Position</label>
                           <select class="form-control" id="id_position" name="id_position">
                           @foreach($poss as $poss)
                           <option value=" {{$poss->id}}" >{{$poss->name_position}}</option>

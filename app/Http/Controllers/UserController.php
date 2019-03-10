@@ -25,9 +25,9 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->email = $request->email;
         $user->address = $request->address;
-        $users->password = bcrypt($request->password);
+        $user->password = bcrypt($request->password);
 
-        $users->save();
+        $user->save();
         return redirect('user');
 
     }

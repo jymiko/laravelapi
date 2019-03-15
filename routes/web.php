@@ -16,14 +16,19 @@ Route::get('/', function () {
 });
 
 
-Route::resource('item','ItemController');
-Route::resource('position','PositionController');   
-Route::resource('user','UserController');
-Route::resource('card','CardController');   
-Route::resource('list','ItemListController');
-Route::resource('carduser','UserCardController');
-Route::resource('itemuser','UserItemController');
-Route::resource('profile','ProfileController');
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('item','ItemController');
+    Route::resource('position','PositionController');   
+    Route::resource('user','UserController');
+    Route::resource('card','CardController');   
+    Route::resource('list','ItemListController');
+    Route::resource('carduser','UserCardController');
+    Route::resource('itemuser','UserItemController');
+    Route::resource('profile','ProfileController');
+    
+
+});
+
 Route::resource('regist','RegisterController');
 
 Route::get('/login','Auth/LoginController@login');

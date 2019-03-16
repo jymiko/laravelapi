@@ -16,7 +16,7 @@
                         <div class="row">
                             <div class="col-6 collapse-brand">
                             <a class="navbar-brand pt-0" href="./index.html">
-                                <img src="{{ asset ('img/brand/blue.png')}}" class="navbar-brand-img" alt="...">
+                                <img src="{{ asset ('img/brand/logo_tugu.png')}}" class="navbar-brand-img" alt="...">
                             </a>
                             </div>
                             <div class="col-6 collapse-close">
